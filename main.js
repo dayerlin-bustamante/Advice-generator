@@ -4,7 +4,7 @@ const adviceUp = async () => {
     let datos = await res.json();
 
     document.getElementById("text-advice").innerHTML = `"${datos.slip.advice}"`;
-    document.getElementById("num-advice").innerHTML = `"${datos.slip.id}"`;
+    document.getElementById("num-advice").innerHTML = `${datos.slip.id}`;
   } catch (error) {
     console.log("error");
   }
